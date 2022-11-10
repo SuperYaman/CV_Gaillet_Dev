@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Josefin+Sans&family=Roboto+Mono&display=swap');
+
+h1 {
+   text-transform: uppercase;
+}
+
+h2 {
+ font-family: 'Oswald';
+ text-transform: uppercase;
+}
+
+h3 {
+   font-family: 'Roboto Mono';
+   text-transform: uppercase;
+}
+
+h4 {
+   font-family: 'Roboto Mono';
+}
+
+h5 {
+   font-family: 'Josefin Sans', 'sans-serif';
+}
+
+h6 {
+   font-family: 'Oswald';
+   text-transform: uppercase;
+   font-size: 1.3em!important;
+}
+
+p {
+   font-family: 'Josefin Sans', 'sans-serif';
+   color: white;
+   font-size: 1.2em;
+}
+
+li {
+   font-weight: 500;
+   list-style-type: none;
+}
+
+body {
+   background-color: #F8F9FA !important;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- HEADER--------------------------- */
+.navbar {
+   opacity: .4;
+}
+
+
+h1 {
+   padding-top: 10%;
+   text-align: center;
+   padding-right: 0;
+   font-family: 'Oswald', sans-serif;
+}
+
+#line {
+   height: 1px;
+   background-color: #f5f4f3;
+   width: 11%;
+   margin: 1em auto;
+}
+
+.accueil {
+   background: url(basic-pics/sunset_minimal_landscape_4k.jpg) no-repeat fixed 50% 50%;
+   background-size: cover;
+   opacity: 0.8;
+}
+
+.profil {
+   margin-top: 5%;
+}
+
+@media (max-width: 300px) {
+   h5 a {
+      font-size: .8em;
+   }
+   #cube {
+      flex-direction: column;
+      align-items: center;
+   }
+   .profil {
+      margin-top: 70%;
+   }
+   .profil img {
+      width: 100%!important;
+   }
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+   .profil {
+      margin-top: 55%;
+   }
+}
+
+@media (min-width: 530px) and (max-width: 768px) {
+   .profil {
+      margin-top: 20%;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   .profil {
+      margin-top: 20%;
+   }
+}
+
+@media (min-width: 1024px) {
+   .profil {
+      margin-top:10%;
+   }
+}
+
+@media (min-width: 1366px) {
+   .profil {
+      margin-top: 0;
+   }
+}
+/* ----------------- LANGAGE ----------------- */
+
+
+
+
+/* ----------- CUBE ----------------------- */
+:root {
+   --size: 70px;
+}
+
+.cube {
+   margin: 12rem auto 0;
+   width: var(--size);
+   height: var(--size);
+   transform-style: preserve-3d;
+   /* transform: rotateY(30deg) rotateZ(30deg); */
+   animation: roll 20s infinite linear;
+}
+
+.side {
+   position: absolute;
+   /* opacity: .9; */
+   width: var(--size);
+   height: var(--size);
+}
+
+#front {
+   background: url(basic-pics/html.png) no-repeat center/cover;
+   transform: translateZ(calc(var(--size) / 2));
+}
+
+#top {
+   background: url(basic-pics/css.png) no-repeat center/cover;
+   transform: rotateX(-270deg) translateY(calc(-1 * (var(--size) / 2)));
+   transform-origin: top center;
+}
+
+#bottom {
+   background: url(basic-pics/html.png) no-repeat center/cover;
+   transform: rotateX(270deg) translateY(calc(var(--size) / 2));
+   transform-origin: bottom center;
+}
+
+#right {
+   background: url(basic-pics/java.png) no-repeat center/cover;
+   transform: rotateY(-270deg) translateX(calc(var(--size) / 2));
+   transform-origin: top right;
+}
+
+#left {
+   background: url(basic-pics/JS.png) no-repeat center/cover;
+   transform: rotateY(270deg) translateX(calc(-1 * (var(--size) / 2)));
+   transform-origin: center left;
+}
+
+#back {
+   background: url(basic-pics/sass.png) no-repeat center/cover;
+   transform: rotateY(-180deg) translateZ(calc(var(--size) / 2));
+}
+#front {
+   background: url(basic-pics/spring_boog.png) no-repeat center/cover;
+   transform: translateZ(calc(var(--size) / 2));
+}
+
+/* ----------------- CUBE 2 ---------------- */
+
+#top2 {
+   background: url(basic-pics/JS.png) no-repeat center/cover;
+   transform: rotateX(-270deg) translateY(calc(-1 * (var(--size) / 2)));
+   transform-origin: top center;
+}
+
+#bottom2 {
+   background: url(basic-pics/react.png) no-repeat center/cover;
+   transform: rotateX(270deg) translateY(calc(var(--size) / 2));
+   transform-origin: bottom center;
+}
+
+#right2 {
+   background: url(basic-pics/Symfony.jpg) no-repeat center/cover;
+   transform: rotateY(-270deg) translateX(calc(var(--size) / 2));
+   transform-origin: top right;
+}
+
+#left2 {
+   background: url(basic-pics/spring_boog.png) no-repeat center/cover;
+   transform: rotateY(270deg) translateX(calc(-1 * (var(--size) / 2)));
+   transform-origin: center left;
+}
+
+#back2 {
+   background: url(basic-pics/java.png) no-repeat center/cover;
+   transform: rotateY(-180deg) translateZ(calc(var(--size) / 2));
+}
+
+#front2 {
+   background: url(basic-pics/bootstrap.jpg) no-repeat center/cover;
+   transform: translateZ(calc(var(--size) / 2));
+}
+
+
+/* ---------------- CUBE3 ------------------- */
+
+#top3 {
+   background: url(basic-pics/PHP.png) no-repeat center/cover;
+   transform: rotateX(-270deg) translateY(calc(-1 * (var(--size) / 2)));
+   transform-origin: top center;
+}
+
+#bottom3 {
+   background: url(basic-pics/phpMyAdmin.png) no-repeat center/cover;
+   transform: rotateX(270deg) translateY(calc(var(--size) / 2));
+   transform-origin: bottom center;
+}
+
+#right3 {
+   background: url(basic-pics/mysql.png) no-repeat center/cover;
+   transform: rotateY(-270deg) translateX(calc(var(--size) / 2));
+   transform-origin: top right;
+}
+
+#left3 {
+   background: url(basic-pics/Symfony.jpg) no-repeat center/cover;
+   transform: rotateY(270deg) translateX(calc(-1 * (var(--size) / 2)));
+   transform-origin: center left;
+}
+
+#back3 {
+   background: url(basic-pics/MySQL.jpg) no-repeat center/cover;
+   transform: rotateY(-180deg) translateZ(calc(var(--size) / 2));
+}
+
+#front3 {
+   background: url(basic-pics/html.png) no-repeat center/cover;
+   transform: translateZ(calc(var(--size) / 2));
+}
+
+@keyframes roll {
+   from {
+       transform: rotateX(0) rotateY(0) rotateZ(0);
+   }
+   to {
+       transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+   }
+}
+
+/* -------------------------- PARCOURS ------------------------- */
+
+#parcours {
+   max-width: 55%;
+   margin: 3em auto 3em auto;
+   background: url(./basic-pics/4.jpg) no-repeat fixed 50% 50%;
+   background-size: cover;
+   border-radius: 8px;
+   box-shadow: -1px -1px 8px #283655;
+}
+#parcours h3 {
+   font-size: 2.5em;
+   padding-bottom: 30px;
+}
+
+#parcours h4 {
+   font-size: 1.6em;
+   color: coral;
+   margin-left: 20px;
+}
+
+#parcours h6 {
+   font-style: italic;
+   color: #e7e5e7;
+   margin-left: 20px;
+}
+
+#parcours p {
+   line-height: 1.5em;
+}
+
+.timeline {
+   border-top: 3px solid;
+   border-image: linear-gradient(to right, coral, #e0dbdf);
+   border-image-slice: 1;
+   margin: 0;
+   margin-left: 2em;
+   margin-right: 2em;
+   padding: 40px;
+   position: relative;
+}
+
+.timeline:nth-child(1):after {
+   content: "\0025B2";
+   color: #e0dbdf;
+   position: absolute;
+   top: -10px;
+   right: -8px;
+   box-sizing: content-box !important;
+}
+
+.timeline:nth-child(1) {
+   border-bottom: 3px solid;
+   border-top: none;
+   width: 80%;
+}
+
+.timeline:nth-child(2) {
+   border-top: none;
+}
+
+.timeline:nth-child(odd) {
+   border-right: 3px solid;
+   padding-left: 0;
+}
+
+.timeline:nth-child(even) {
+   border-left: 3px solid;
+   padding-right: 0;
+}
+
+@media (max-width: 768px) {
+   #parcours {
+      max-width: 98%;
+   }
+}
+
+
+/* ------------------- PORTFOLIO -------------------- */
+
+@media (max-width: 460px) {
+   #portfolio {
+      padding: 0;
+   }
+}
+
+@media (max-width: 300px) {
+   .card {
+      width: 16em!important;
+   }
+}
+
+
+/* ---------------- SKILLS -------------------- */
+@media (max-width: 768px) {
+   .skills {
+      flex-direction: column;
+   }
+}
+
+#git-skill{
+   color: #8f0871;
+}
+#xd-skill{
+   color: coral;
+}
+#agile-skill{
+   color: #8f0871;
+}
+#en-skill{
+   color: coral;
+}
+#seo-skill{
+   color: #8f0871;
+}
+
+
+/* ------------------- FOOTER ------------------------- */
+
+footer {
+   background: url(./basic-pics/sunset_minimal_landscape_4k.jpg) 50% 0% no-repeat fixed;
+   background-size: cover;
+   height: 200px;
+}
+
+.icon {
+   font-size: 3em;
+   color: antiquewhite;
+}
+
+.icon:hover {
+   color: coral;
+   transition: all .3s ease-in-out;
+}
